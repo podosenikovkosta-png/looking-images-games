@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url(10007-11-1300x550.webp); background-size: 100% 200%; background-repeat: no-repeat;">
+    <div style="background-color: red; height: 350px;width: 150px;">
+        <h1 style="margin-left: 20px;">Найди:</h1>
+        <h1 style="margin-left: 20px;">яблоко</h1>
+        <h1 style="margin-left: 20px;">зонт</h1>
+        <h1 style="margin-left: 20px;">окно</h1>
+        <h1 style="margin-left: 20px;">цветок</h1>
+        <h1 style="margin-left: 20px; display: flex;">очки: <p class="score" style="margin-top: 0px;"></p></h1>
+    </div>
+    <img class="img" style="height: 30px; margin-left: 1400px; position: absolute;" src="images.jpg" alt="">
+    <img class="img1" style="height: 50px; position: absolute; margin-left: 430px; margin-top: -150px;" src="elegant-white-window-with-open-shutters-sheer-curtains_191095-81029.avif" alt="">
+    <img class="img2" style="height: 50px; position: absolute; margin-top: 200px;" src="8abb43a5e1b78c020ce247cd3e18826f.jpg" alt="">
+    <img class="img3" style="height: 20px; margin-left: 700px; margin-top: -200px; position: absolute;" src="17704040_003.jpg" alt="">
+</body>
+<script>
+    let jggf = 0;
+document.querySelector(".img").onclick = function () {
+    jggf = jggf + 1;
+    document.querySelector(".score").innerHTML = jggf;
+    document.querySelector(".img").style.display = "none";
+alert("вы нашли")
+if(jggf == 4){
+    alert(" вы нашли все предметы поздравляю ты выйграл ");
+} 
+}
+document.querySelector(".img1").onclick = function () {
+    jggf = jggf + 1;
+    document.querySelector(".score").innerHTML = jggf;
+    document.querySelector(".img1").style.display = "none";
+alert("вы нашли")
+if(jggf == 4){
+    alert(" вы нашли все предметы поздравляю ты выйграл");
+}
+}
+document.querySelector(".img2").onclick = function () {
+    jggf = jggf + 1;
+    document.querySelector(".score").innerHTML = jggf;
+    document.querySelector(".img2").style.display = "none";
+alert(" вы нашли")
+if(jggf == 4){
+    alert(" вы нашли все предметы поздравляю ты выйграл");
+}
+}
+document.querySelector(".img3").onclick = function () {
+    jggf = jggf + 1;
+    document.querySelector(".score").innerHTML = jggf;
+    document.querySelector(".img3").style.display = "none";
+alert("вы нашли")
+if(jggf == 4){
+    alert("  вы нашли все предметы поздравляю ты выйграл");
+}
+}
+</script>
+</html>
